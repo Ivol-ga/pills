@@ -1,11 +1,11 @@
-## Headphones online shop
+## Pills online shop
 
 This project was bootstrapped with SASS on React
 
 ## Used:
 Webpack
 Babel
-SASS/SCSS
+SASS
 React
 
 ## Available Scripts
