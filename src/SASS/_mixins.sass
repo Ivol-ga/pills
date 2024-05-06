@@ -1,0 +1,50 @@
+@mixin text-gray
+    color: $color-gray
+@mixin link-master
+  color: $color-second-black
+  text-decoration: none
+@mixin h2-main
+  color: $color-main-black
+  font-family: $main-font
+  font-size: 40px
+  font-weight: 800
+  text-transform: uppercase
+  line-height: 1.2em
+@mixin h3
+  color: $color-main-black
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif
+  font-size: 43px
+  font-weight: 500
+  line-height: 1.2em
+  text-align: center
+@mixin li-black
+  color: $color-main-black
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif
+  font-size: 20px
+  font-weight: 700
+  line-height: 30px
+  text-align: center
+@mixin text-black
+  color: $color-main-black
+@mixin text-red
+  color: $color-red
+
+
+
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media (max-width: 600px)
+            @content
+
+    @if $breakpoint == tab-port
+        @media (max-width: 830px)
+            @content
+
+    @if $breakpoint == tab-land
+        @media (max-width: 1061px)
+            @content
+
+    @if $breakpoint == big-screen
+        @media (min-width: 1800px)
+            @content

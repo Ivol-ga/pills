@@ -1,0 +1,438 @@
+.wrapper
+    flex: 1
+.container
+    max-width: 1120px
+    // padding-left: 5px
+    // padding-right: 5px
+    // width: 95%
+    margin: 0 auto
+    font-family: $main-font
+    // margin-bottom: 15px
+.content
+    // padding: 20px 0
+    flex: 1
+.main
+    &__wrapper
+        max-width: 550px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        gap: 16px
+    &__title
+        @include h2-main
+        text-align: center
+    &__text
+        @include text-red
+        text-align: center
+    &__list
+        padding-left: 0
+    &__img
+        width: 550px
+        border-radius: 15px
+    &__list-text
+        @include li-black
+        font-size: 20px
+        font-weight: 700
+        line-height: 30px
+        font-family: $main-font
+    &__text-desc
+        @include li-black
+    &__text-h3
+        @include h3
+        margin: 10px
+    &__rating
+        text-align: center
+    &__rating-text
+        font-size: 26px
+.section
+    &__natural
+        display: flex
+        flex-direction: column
+        align-items: center   
+    &__natural-title
+        color: $color-blue
+        font-size: 32px
+    &__natural-h4
+        font-size: 22px
+        font-weight: 800
+    &__reserva-text
+        text-align: left
+        font-weight: 700
+        line-height: 30px
+
+.text__red
+    @include text-red
+.rating
+    color: #ffa41c
+    font-size: 26px
+.fa-solid
+    width: 25px
+    font-size: 20px
+.arrows
+    max-width: 100%
+    max-height: 145px
+    max-width: 193px
+    margin: 0 auto
+
+    
+.elementor-headline--style-rotate .elementor-headline-dynamic-wrapper
+    text-align: left
+    overflow: hidden
+
+.elementor-headline--style-highlight .elementor-headline-dynamic-wrapper
+    overflow: visible
+    text-align: inherit
+.elementor-headline-dynamic-wrapper
+    display: inline-block
+    position: relative
+.elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+.elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text.elementor-headline-text-active
+    position: relative
+.elementor-headline-animation-type-flip .elementor-headline-dynamic-wrapper
+    -webkit-perspective: 300px
+    perspective: 300px
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper
+    vertical-align: top
+    overflow: hidden
+    
+
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper:after
+    content: ""
+    position: absolute
+    left: auto
+    right: 0
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    height: 90%
+    width: 1px
+    background-color: #0d0d0d
+
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper:not(.elementor-headline-typing-selected):after
+    -webkit-animation: elementor-headline-pulse 1s infinite
+    animation: elementor-headline-pulse 1s infinite
+    
+
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper.elementor-headline-typing-selected
+    background-color: #0d0d0d
+    
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper.elementor-headline-typing-selected:after
+    visibility: hidden
+    
+
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper.elementor-headline-typing-selected .elementor-headline-dynamic-text
+    color: #aebcb9
+
+.elementor-headline-animation-type-swirl .elementor-headline-dynamic-wrapper
+    -webkit-perspective: 300px
+    perspective: 300px
+.elementor-headline-animation-type-slide-down .elementor-headline-dynamic-wrapper
+    overflow: hidden
+    vertical-align: top
+.elementor-headline-animation-type-clip .elementor-headline-dynamic-wrapper
+    overflow: hidden
+    vertical-align: top
+
+
+.elementor-headline-animation-type-clip .elementor-headline-dynamic-wrapper:after
+    content: ""
+    position: absolute
+    top: 0
+    left: auto
+    right: 0
+    width: 2px
+    height: 100%
+    background-color: #0d0d0d
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper
+    -webkit-perspective: 300px
+    perspective: 300px
+.elementor-headline-animation-type-blinds .elementor-headline-dynamic-wrapper
+    -webkit-perspective: 300px
+    perspective: 300px
+
+.elementor-headline-animation-type-blinds .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-flip .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-slide-down .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-slide .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-swirl .elementor-headline-dynamic-wrapper,
+.elementor-headline-animation-type-wave .elementor-headline-dynamic-wrapper
+    -webkit-transition: width .5s
+    -o-transition: width .5s
+    transition: width .5s
+
+
+
+.elementor-headline-text-wrapper
+    vertical-align: bottom
+.elementor-headline-animation-type-slide-down .elementor-headline-text-wrapper
+    display: inline-block
+    padding: .2em 0
+.elementor-headline-animation-type-clip .elementor-headline-text-wrapper
+    display: inline-block
+    padding: .2em 0
+.elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text
+    display: inline-block
+    position: absolute
+    top: 0
+    left: 0
+
+.elementor-headline-dynamic-wrapper .elementor-headline-dynamic-text.elementor-headline-text-active
+    position: relative
+
+.elementor-headline-animation-type-flip .elementor-headline-dynamic-text
+    opacity: 0
+    -webkit-transform-origin: 50% 100%
+    -ms-transform-origin: 50% 100%
+    transform-origin: 50% 100%
+    -webkit-transform: rotateX(180deg)
+    transform: rotateX(180deg)
+
+.elementor-headline-animation-type-flip .elementor-headline-dynamic-text.elementor-headline-text-active
+    opacity: 1
+    -webkit-transform: rotateX(0deg)
+    transform: rotateX(0deg)
+    -webkit-animation: elementor-headline-flip-in 1.2s
+    animation: elementor-headline-flip-in 1.2s
+
+.elementor-headline-animation-type-flip .elementor-headline-dynamic-text.elementor-headline-text-inactive
+    -webkit-transform: rotateX(180deg)
+    transform: rotateX(180deg)
+    -webkit-animation: elementor-headline-flip-out 1.2s
+    animation: elementor-headline-flip-out 1.2s
+    
+
+
+.elementor-headline--style-highlight .elementor-headline-dynamic-text
+    z-index: 1
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-wrapper.elementor-headline-typing-selected .elementor-headline-dynamic-text
+    color: #aebcb9
+.elementor-headline-animation-type-typing .elementor-headline-dynamic-text:not(.elementor-headline-text-active)
+    visibility: hidden
+.elementor-headline-animation-type-swirl .elementor-headline-dynamic-text
+    -webkit-transform: scaleX(1.0005)
+    -ms-transform: scaleX(1.0005)
+    transform: scaleX(1.0005)
+    opacity: 0
+.elementor-headline-animation-type-slide-down .elementor-headline-dynamic-text
+    opacity: 0
+    top: .2em
+
+.elementor-headline-animation-type-slide-down .elementor-headline-dynamic-text.elementor-headline-text-active
+    top: 0
+    opacity: 1
+    -webkit-animation: elementor-headline-slide-down-in .6s
+    animation: elementor-headline-slide-down-in .6s
+
+
+.elementor-headline-animation-type-slide-down .elementor-headline-dynamic-text.elementor-headline-text-inactive
+    -webkit-animation: elementor-headline-slide-down-out .6s
+    animation: elementor-headline-slide-down-out .6s
+.elementor-headline-animation-type-clip .elementor-headline-dynamic-text
+    opacity: 0
+
+.elementor-headline-animation-type-clip .elementor-headline-dynamic-text.elementor-headline-text-active
+    opacity: 1
+
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper
+    -webkit-perspective: 300px
+    perspective: 300px
+
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-text
+    opacity: 0
+
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-text.elementor-headline-text-active
+    opacity: 1
+    -webkit-animation: elementor-headline-drop-in-in .8s
+    animation: elementor-headline-drop-in-in .8s
+
+.elementor-headline-animation-type-drop-in .elementor-headline-dynamic-text.elementor-headline-text-inactive
+    -webkit-animation: elementor-headline-drop-in-out .8s
+    animation: elementor-headline-drop-in-out .8s
+.elementor-headline-animation-type-blinds .elementor-headline-dynamic-text
+    opacity: 0
+.elementor-headline-animation-type-slide .elementor-headline-dynamic-text.elementor-headline-text-active
+    opacity: 1
+    -webkit-animation: elementor-headline-slide-in .6s
+    animation: elementor-headline-slide-in .6s
+
+.elementor-headline-animation-type-slide .elementor-headline-dynamic-text.elementor-headline-text-inactive
+    -webkit-animation: elementor-headline-slide-out .6s
+    animation: elementor-headline-slide-out .6s
+.elementor-headline-animation-type-blinds .elementor-headline-dynamic-text,
+.elementor-headline-animation-type-swirl .elementor-headline-dynamic-text,
+.elementor-headline-animation-type-wave .elementor-headline-dynamic-text
+    white-space: nowrap
+    
+
+.elementor-headline-text-active .elementor-headline-animation-type-swirl .elementor-headline-dynamic-letter
+    opacity: 1
+.elementor-headline-text-active .elementor-headline-animation-type-blinds .elementor-headline-dynamic-letter
+    -webkit-transform: rotateY(0deg)
+    transform: rotateY(0deg)
+.elementor-headline-text-active .elementor-headline-animation-type-wave .elementor-headline-dynamic-letter
+    opacity: 1
+
+
+
+
+@-webkit-keyframes elementor-headline-pulse
+    0%
+        -webkit-transform: translateY(-50%) scale(1)
+        transform: translateY(-50%) scale(1)
+        opacity: 1
+    
+    40%
+        -webkit-transform: translateY(-50%) scale(.9)
+        transform: translateY(-50%) scale(.9)
+        opacity: 0
+    
+    to
+        -webkit-transform: translateY(-50%) scale(0)
+        transform: translateY(-50%) scale(0)
+        opacity: 0
+    
+
+
+@keyframes elementor-headline-pulse
+    0%
+        -webkit-transform: translateY(-50%) scale(1)
+        transform: translateY(-50%) scale(1)
+        opacity: 1
+    
+    40%
+        -webkit-transform: translateY(-50%) scale(.9)
+        transform: translateY(-50%) scale(.9)
+        opacity: 0
+        
+    to
+        -webkit-transform: translateY(-50%) scale(0)
+        transform: translateY(-50%) scale(0)
+        opacity: 0
+    
+
+@-webkit-keyframes elementor-headline-flip-in
+    0%
+        -webkit-transform: rotateX(180deg)
+        transform: rotateX(180deg)
+        opacity: 0
+    35%
+        -webkit-transform: rotateX(120deg)
+        transform: rotateX(120deg)
+        opacity: 0
+    65%
+        opacity: 0
+    to
+        -webkit-transform: rotateX(1turn)
+        transform: rotateX(1turn)
+        opacity: 1
+  
+@keyframes elementor-headline-flip-in
+    0%
+        -webkit-transform: rotateX(180deg)
+        transform: rotateX(180deg)
+        opacity: 0
+    35%
+        -webkit-transform: rotateX(120deg)
+        transform: rotateX(120deg)
+        opacity: 0
+    65%
+        opacity: 0
+        
+    to
+        -webkit-transform: rotateX(1turn)
+        transform: rotateX(1turn)
+        opacity: 1
+
+@-webkit-keyframes elementor-headline-flip-out
+    0%
+        -webkit-transform: rotateX(0deg)
+        transform: rotateX(0deg)
+        opacity: 1
+    35%
+        -webkit-transform: rotateX(-40deg)
+        transform: rotateX(-40deg)
+        opacity: 1
+    65%
+        opacity: 0
+    to
+        -webkit-transform: rotateX(180deg)
+        transform: rotateX(180deg)
+        opacity: 0
+
+@keyframes elementor-headline-flip-out
+    0%
+        -webkit-transform: rotateX(0deg)
+        transform: rotateX(0deg)
+        opacity: 1
+    35%
+        -webkit-transform: rotateX(-40deg)
+        transform: rotateX(-40deg)
+        opacity: 1
+    65%
+        opacity: 0
+    to
+        -webkit-transform: rotateX(180deg)
+        transform: rotateX(180deg)
+        opacity: 0
+@-webkit-keyframes elementor-headline-slide-down-in
+    0%
+        opacity: 0
+        -webkit-transform: translateY(-100%)
+        transform: translateY(-100%)
+    60%
+        opacity: 1
+        -webkit-transform: translateY(20%)
+        transform: translateY(20%)
+    to
+        opacity: 1
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@keyframes elementor-headline-slide-down-in
+    0%
+        opacity: 0
+        -webkit-transform: translateY(-100%)
+        transform: translateY(-100%)
+    60%
+        opacity: 1
+        -webkit-transform: translateY(20%)
+        transform: translateY(20%)
+    to
+        opacity: 1
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+
+@-webkit-keyframes elementor-headline-slide-down-out
+    0%
+        opacity: 1
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+    60%
+        opacity: 0
+        -webkit-transform: translateY(120%)
+        transform: translateY(120%)
+    to
+        opacity: 0
+        -webkit-transform: translateY(100%)
+        transform: translateY(100%)
+
+
+@keyframes elementor-headline-slide-down-out
+    0%
+        opacity: 1
+        -webkit-transform: translateY(0)
+        transform: translateY(0)
+    60%
+        opacity: 0
+        -webkit-transform: translateY(120%)
+        transform: translateY(120%)
+    to
+        opacity: 0
+        -webkit-transform: translateY(100%)
+        transform: translateY(100%)
